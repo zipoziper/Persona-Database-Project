@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="headerper">
+<h1>
+    Welcome 
+</h1>
+<div id="headeroptions">
+<h2 onclick="homeClick()">Home</h2>
+
+    <h2 onclick="aboutshow()">
+        About
+    </h2>    
+    <h2 onclick="updateshow()">
+        Update Log
+    </h2>
+        <h2 onclick="galeryShow()">
+     Galery (Beta)
+    </h2>
+</div>
+</div>
+<div id="homemsg">you already are in home :/</div>
+
+<div id="gallerySection" style="display: none;">
+    <h1>Gallery</h1>
+
+    <div class="galleryGrid">
+       <div class="galleryGrid">
+    <img src="img/gallery/image1.png" onclick="imgshow(this)">
+    <img src="img/gallery/image2.png" onclick="imgshow(this)">
+        <img src="img/gallery/image3.png" onclick="imgshow(this)">
+    <img src="img/gallery/image4.png" onclick="imgshow(this)">
+        <img src="img/gallery/image5.png" onclick="imgshow(this)">
+    <img src="img/gallery/image6.png" onclick="imgshow(this)">
+        <img src="img/gallery/image7.png" onclick="imgshow(this)">
+    <img src="img/gallery/image8.png" onclick="imgshow(this)">
+        <img src="img/gallery/image9.png" onclick="imgshow(this)">
+    <img src="img/gallery/image10.png" onclick="imgshow(this)">
+        <img src="img/gallery/image11.png" onclick="imgshow(this)">
+    <img src="img/gallery/image12.png" onclick="imgshow(this)">
+        <img src="img/gallery/image13.png" onclick="imgshow(this)">
+        <img src="img/gallery/image14.png" onclick="imgshow(this)">
+  <img src="img/gallery/image15.png" onclick="imgshow(this)">
+    <img src="img/gallery/image17.png" onclick="imgshow(this)">
+
+</div>
+
+    </div>
+</div>
+
+
+<div id="overlay" onclick="closeAll()">
+
+    <img id="imgFull">
+<div id="aboutmsg" class="modalBox">
+    <h2>About the Project</h2>
+
+    <p>
+        Persona Database is an independent fan-made project created to organize,
+        document, and present structured information about the Persona series
+        in a clean and accessible format. The goal of the website is to function
+        as a centralized reference hub where users can easily navigate between
+        different game entries and explore related content.
+    </p>
+
+    <p>
+        The platform is designed with clarity and simplicity in mind. It uses
+        a modular layout system, individual pages for each main title
+        (Persona 3, Persona 4, and Persona 5), and a unified overlay system
+        for modal content such as the About section and Update Log.
+    </p>
+
+    <p>
+        The website currently includes:
+    </p>
+
+    <ul>
+        <li>Dedicated pages for Persona 3, Persona 4, and Persona 5</li>
+        <li>A fullscreen image preview system with background blur</li>
+        <li>A unified modal overlay architecture</li>
+        <li>Smooth fade-in and fade-out page transitions</li>
+        <li>Structured navigation between all pages</li>
+    </ul>
+
+    <p>
+        This project focuses on structured expansion. As development continues,
+        additional sections will be added, including detailed character profiles,
+        Persona entries, gameplay systems, timeline references, and categorized
+        database content.
+    </p>
+
+    <p>
+        The long-term objective is to evolve the website into a fully structured
+        archival resource dedicated to the Persona franchise, maintaining clarity,
+        consistency, and scalability as new content is introduced.
+    </p>
+</div>
+
+
+<div id="updatelog" class="modalBox">
+    <h2>Update Log</h2>
+
+    <h3>Version 1.3</h3>
+    <ul>
+        <li>Added separate pages for Persona 3, Persona 4, and Persona 5</li>
+        <li>Implemented page navigation system between all entries</li>
+        <li>Added global fade-in and fade-out transition between pages</li>
+        <li>Improved structural organization across HTML files</li>
+    </ul>
+
+    <h3>Version 1.2</h3>
+    <ul>
+        <li>Created unified modal overlay system</li>
+        <li>Integrated About section inside overlay</li>
+        <li>Integrated Update Log inside overlay</li>
+        <li>Optimized modal logic with hideAll() function</li>
+        <li>Removed duplicate overlays and cleaned DOM structure</li>
+    </ul>
+
+    <h3>Version 1.1</h3>
+    <ul>
+        <li>Implemented fullscreen image preview system</li>
+        <li>Added background blur using backdrop-filter</li>
+        <li>Added centralized overlay close system</li>
+        <li>Improved CSS layout stability</li>
+    </ul>
+
+    <h3>Version 1.0</h3>
+    <ul>
+        <li>Created base layout structure</li>
+        <li>Added header and navigation section</li>
+        <li>Implemented basic CSS styling</li>
+        <li>Established project foundation</li>
+    </ul>
+</div>
+
+
+</div>
+<div id="gamesredirect">
+    <h1>
+        Games Data
+    </h1>
+   <ul>
+    <li><h2 class="persona3t"><a href="gamesredirect/persona3.html">Persona 3</a></h2></li>
+    <li><h2 class="persona4t"><a href="gamesredirect/persona4.html">Persona 4</a></h2></li>
+    <li><h2 class="persona5t"><a href="gamesredirect/persona5.html">Persona 5</a></h2></li>
+</ul>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>
